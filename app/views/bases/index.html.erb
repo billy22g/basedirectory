@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      BaseDirectory: We Have Your Bases Covered
+    </title>
+  </head>
+  <body>
+    <h1><%= pluralize(@bases.count, "Base") %></h1>
+    <ul>
+      <% @bases.each do |base| %>
+        <li><h2><%= base.name %></h2></li><br/>
+        <%= base.name %> is a <%= base.branch %> base, located in
+        <%= base.city %>, <%= base.state %>. Its specific location is
+        <%= base.lat %>, <%= base.long %>.
+      <% end %>
+  </body>
+</html>
