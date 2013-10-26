@@ -1,28 +1,12 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+BaseDirectory.com is a web application providing military base information for every base around the world. 
 
-Things you may want to cover:
+I am currently learning Rails in gSchool, so I'm using the base directory model to reinforce the skills I learn.
 
-* Ruby version
+The database is currently sqlite3, and I'm using Ruby 2.0.0. My intent is to continue developing this as I pick up new skills. 
 
-* System dependencies
+To deploy this app, you'll just need to use "rails s" in your terminal, and go to localhost:3000.
 
-* Configuration
+Thanks!
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
