@@ -23,4 +23,12 @@ Base.delete_all
                       state: "CA", 
                       country: "US",
                       lat: 33.2804,
-                      long: -117.299}])
+                      long: -117.299},
+
+                     {name: "Fort Hood",
+                      branch: "Army", 
+                      city: "Killeen", 
+                      state: "TX", 
+                      country: "US",
+                      lat: 31.1333,
+                      long: -97.7804}])
