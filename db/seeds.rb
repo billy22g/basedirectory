@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Base.delete_all
+
+        Base.create([{name: "Naval Base San Diego",
+                      branch: "Navy", 
+                      city: "San Diego", 
+                      state: "CA", 
+                      country: "US",
+                      lat: 32.684,
+                      long: -117.127
+                      }])
