@@ -15,4 +15,12 @@ Base.delete_all
                       country: "US",
                       lat: 32.684,
                       long: -117.127
-                      }])
+                      },
+
+                     {name: "Camp Pendleton",
+                      branch: "Marine Corps", 
+                      city: "Oceanside", 
+                      state: "CA", 
+                      country: "US",
+                      lat: 33.2804,
+                      long: -117.299}])
