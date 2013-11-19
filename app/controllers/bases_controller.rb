@@ -31,6 +31,12 @@ class BasesController < ApplicationController
     redirect_to bases_path
   end
 
+  def destroy
+    @base = Base.find(params[:id])
+    @base.destroy
+    redirect_to bases_path
+  end
+
   private 
 
   def base_params
