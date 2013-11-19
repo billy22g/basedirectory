@@ -1,0 +1,29 @@
+<%= form_for(@base) do |f| %>
+  <p>
+  <%= f.label :name %><br/>
+  <%= f.text_field :name, autofocus: true %>
+  </p>
+  <p>
+  <%= f.label :branch %><br/>
+  <%= f.text_field :branch %>
+  </p>
+  <p>
+  <%= f.label :city %><br/>
+  <%= f.text_field :city %>
+  </p>
+  <p>
+  <%= f.label :state %><br/>
+  <%= f.text_field :state %>
+  </p>
+  <p>
+  <%= f.label :lat %><br/>
+  <%= f.text_field :lat %>
+  </p>
+  <p>
+  <%= f.label :long %><br/>
+  <%= f.text_field :long %>  
+  </p>
+  <%= f.submit %>
+<% end %><br/><br/>
+
+<%= link_to "Back to All Bases", bases_path %>
