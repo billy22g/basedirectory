@@ -40,6 +40,6 @@ class BasesController < ApplicationController
   private 
 
   def base_params
-    params.require(:base).permit(:name, :branch, :city, :state, :country, :lat, :long)
+    params.require(:base).permit(:name, :branch, :city, :state, :country, :lat, :long, :image_filename)
   end
 end
