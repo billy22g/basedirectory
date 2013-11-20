@@ -15,7 +15,7 @@
         <%= @base.city %>, <%= @base.state %><br/>
         <%= @base.lat %>, <%= @base.long %>
       </p>
-      <%= image_tag @base.image_filename %><br/><br/>
+      <%= image_for(@base) %><br/><br/>
     </article>
     <h3><%= link_to "Edit information for #{@base.name}", edit_base_path(@base) %></h3>
     <h3><%= link_to "Delete #{@base.name}", base_path(@base), method: :delete, 
