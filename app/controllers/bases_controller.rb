@@ -1,6 +1,6 @@
 class BasesController < ApplicationController
   def index
-    @bases = Base.all
+    @bases = Base.by_branch
   end
 
   def new
