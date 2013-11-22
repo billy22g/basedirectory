@@ -1,0 +1,14 @@
+$primary-color: #237CBE;
+$secondary-color: #F0F0F0;
+
+   #sidebar { background: $secondary-color;
+              width: 200px;
+              float: right; }
+
+   #header { color: $secondary-color; 
+             background: $primary-color;
+             padding: 5px; }
+
+   #footer { background: $secondary-color; 
+             color: $primary-color;
+             padding: 5px; }

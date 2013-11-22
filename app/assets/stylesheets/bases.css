@@ -1,8 +1,6 @@
-/*a { text-decoration: none }
-
-li a.deleted { color: blue;
-               background: yellow; }*/
 
    a.delete { color: red !important;
               display: block; }
+
+   
 
