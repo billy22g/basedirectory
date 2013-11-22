@@ -8,17 +8,13 @@
 </head>
 <body>
 
-<header style="color: #F0F0F0; background: #237CBE;">
-  <h1>BaseDirectory.com: We have your bases covered</h1>
-</header>
+<%= render 'layouts/header' %>
+
+<%= render 'layouts/sidebar' %>
 
 <%= yield %>
 
-<footer style="background: #F0F0F0; color: #237CBE;">
-<p>
-  Copyright &copy; 2013 BaseDirectory
-</p>
-</footer>
+<%= render 'layouts/footer' %>
 
 </body>
 </html>
