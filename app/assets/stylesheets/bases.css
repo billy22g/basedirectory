@@ -2,5 +2,7 @@
    a.delete { color: red !important;
               display: block; }
 
+   div.field_with_errors { color: red; }
+
    
 

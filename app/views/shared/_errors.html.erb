@@ -1,0 +1,17 @@
+<% if @base.errors.any? %>
+    <section id="errors">
+      <header>
+        <h2>
+          The base could not be saved!
+        </h2>
+        <h3>
+          Please correct the following <%= pluralize(@base.errors.count, "error") %>:
+        </h3>
+      </header>
+      <ul>
+      <% @base.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </section>
+  <% end %>

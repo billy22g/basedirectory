@@ -9,10 +9,12 @@ class BasesController < ApplicationController
 
   def create
     @base = Base.new(base_params)
-    @base.save
-
-    flash.notice = "New base #{@base.name} created!"
-    redirect_to bases_path
+    if @base.save
+      flash.notice = "New base #{@base.name} created!"
+      redirect_to bases_path
+    else
+      render :new
+    end
   end
 
   def show
@@ -26,14 +28,18 @@ class BasesController < ApplicationController
 
   def update
     @base = Base.find(params[:id])
-    @base.update(base_params)
-    flash.notice = "#{@base.name} was updated!"
-    redirect_to bases_path
+    if @base.update(base_params)
+      flash.notice = "#{@base.name} was updated!"
+      redirect_to bases_path
+    else
+      render :edit
+    end
   end
 
   def destroy
     @base = Base.find(params[:id])
     @base.destroy
+    flash.notice = "#{@base.name} was deleted! BRAC is no good. :("
     redirect_to bases_path
   end
 
