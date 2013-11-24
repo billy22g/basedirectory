@@ -14,7 +14,11 @@
 
     <%= yield %>
 
-    <%= flash.notice %><br/>
+    <% if flash.notice %>
+      <p>
+        <%= flash.notice %>
+      </p>
+    <% end %>
 
     <%= render 'layouts/footer' %>
 
