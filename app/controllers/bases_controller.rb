@@ -10,7 +10,7 @@ class BasesController < ApplicationController
   def create
     @base = Base.new(base_params)
     if @base.save
-      flash.notice = "New base #{@base.name} created!"
+      flash.notice = "#{@base.name} was added to the database!"
       redirect_to bases_path
     else
       render :new
